@@ -1,0 +1,26 @@
+package com.app.entity;
+
+import org.springframework.stereotype.Component;
+
+import com.app.utility.Coach;
+import com.app.utility.FortuneService;
+
+@Component
+public class TennisCoach implements Coach{
+	
+	
+	FortuneService fortuneService;
+	
+	public TennisCoach()
+	{
+		System.out.println("In Default TennisCoach");
+	}
+	
+
+	@Override
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return "Run 5km";
+	}
+
+}

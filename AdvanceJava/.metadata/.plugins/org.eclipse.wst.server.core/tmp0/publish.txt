@@ -1,0 +1,3 @@
+#Tomcat publish data
+#Sat Nov 30 14:56:55 IST 2024
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Admn\\.m2\\repository\\org\\springframework\\spring-web\\6.1.5\\spring-web-6.1.5.jar=WEB-INF/lib/spring-web-6.1.5.jar

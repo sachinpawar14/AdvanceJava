@@ -1,0 +1,10 @@
+package com.app.dao;
+
+public class EmployeeDAO {
+	
+	public static int saveEmployee(Employee e)
+	{
+		
+	}
+
+}

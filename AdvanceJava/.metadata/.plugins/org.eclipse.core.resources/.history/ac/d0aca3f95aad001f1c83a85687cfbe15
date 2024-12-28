@@ -1,0 +1,16 @@
+package com.app;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Airplane implements Vehicle{
+
+	@Override
+	public String start() {
+		// TODO Auto-generated method stub
+		return "Airplane Started";
+	}
+	
+	
+
+}

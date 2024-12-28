@@ -1,0 +1,18 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+	
+	
+	<hibernate-configuration>
+	<session-factory>
+	<property name="hbm2ddl.auto">update</property>
+	<property name="connection.url">jdbc:mysql://192.168.100.80:3306/cdac</property>
+	<property name="connection.username">saleel</property>
+	<property name="connection.password">saleel</property>
+	<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+	<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+	<property name="show_sql">true</property>
+	<mapping class="com.app.entity.Instructor"/>
+	<mapping class="com.app.entity.InstructorDetails"/>
+	</session-factory>
+	</hibernate-configuration>

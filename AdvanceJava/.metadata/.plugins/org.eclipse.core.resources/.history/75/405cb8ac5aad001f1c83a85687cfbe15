@@ -1,0 +1,31 @@
+package com.app;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+
+public class Road {
+	
+	Vehicle vehicle;
+	
+	public Road()
+	{}
+
+	@Autowired
+	@Qualifier("car")
+	public void setVehicle(Vehicle vehicle) {
+		this.vehicle = vehicle;
+	}
+
+	@Override
+	public String toString() {
+		return "Road [vehicle=" + vehicle + "]";
+	}
+	
+	public void callStart()
+	{
+		System.out.println(vehicle.start(););
+	}
+	
+	
+
+}

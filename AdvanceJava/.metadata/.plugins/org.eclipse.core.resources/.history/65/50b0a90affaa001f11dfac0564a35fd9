@@ -1,0 +1,17 @@
+package com.app.dao;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.app.entity.Employee;
+
+public class EmployeeDAO {
+	
+	public static int saveEmployee(Employee e)
+	{
+		
+		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").addAnnotatedClass(Employee.class).buildSessionFactory();
+		return 1;
+	}
+
+}

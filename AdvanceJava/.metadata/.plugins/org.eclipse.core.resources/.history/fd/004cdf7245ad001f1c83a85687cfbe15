@@ -1,0 +1,18 @@
+package com.app.entity;
+
+public class Student {
+	
+	private String name;
+	
+	private String interestedCourse;
+	
+	private String hobby;
+	
+	public Student()
+	{
+		System.out.println("Student Default");
+	}
+	
+	
+
+}

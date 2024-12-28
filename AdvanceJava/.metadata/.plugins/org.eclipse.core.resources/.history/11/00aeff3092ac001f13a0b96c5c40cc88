@@ -1,0 +1,17 @@
+package com.app;
+
+public class Human {
+	
+	Heart heart;
+
+	public void setHeart(Heart heart) {
+		this.heart = heart;
+	}
+	
+	public void pumping()
+	{
+		heart.pump();
+	}
+	
+
+}

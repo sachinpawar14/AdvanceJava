@@ -1,0 +1,13 @@
+package com.app.entity;
+
+import com.app.utility.FortuneService;
+
+public class RandomFortuneService implements FortuneService{
+
+	@Override
+	public String getFortuneService() {
+		// TODO Auto-generated method stub
+		return "Today is your Lucky Day";
+	}
+
+}

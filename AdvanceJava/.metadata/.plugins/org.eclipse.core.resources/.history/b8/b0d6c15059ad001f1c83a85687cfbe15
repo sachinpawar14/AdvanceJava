@@ -1,0 +1,13 @@
+package com.app;
+
+public class Airplane implements Vehicle{
+
+	@Override
+	public String start() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+
+}

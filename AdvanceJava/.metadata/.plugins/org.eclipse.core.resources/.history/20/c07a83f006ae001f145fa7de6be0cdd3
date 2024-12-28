@@ -1,0 +1,13 @@
+package com.app;
+
+import com.app.utility.Coach;
+
+public class TennisCoach implements Coach{
+
+	@Override
+	public String getDailyWorkout() {
+		// TODO Auto-generated method stub
+		return "Run 5km";
+	}
+
+}

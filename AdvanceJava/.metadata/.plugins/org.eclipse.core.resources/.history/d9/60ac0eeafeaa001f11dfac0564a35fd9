@@ -1,0 +1,12 @@
+package com.app.dao;
+
+import com.app.entity.Employee;
+
+public class EmployeeDAO {
+	
+	public static int saveEmployee(Employee e)
+	{
+		return 1;
+	}
+
+}

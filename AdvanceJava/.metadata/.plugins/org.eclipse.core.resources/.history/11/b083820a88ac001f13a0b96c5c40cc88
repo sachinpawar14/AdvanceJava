@@ -1,0 +1,13 @@
+package com.app;
+
+public class Mobile {
+	
+	public static void main(String[] args) {
+		
+		Vodafone v = new Vodafone();
+		v.calling();
+		v.data();
+		
+	}
+
+}

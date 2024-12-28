@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	<bean id="human" class="com.app.Human">
+	<!-- <property name="heart" ref="humanHeart"></property> -->
+	<constructor-arg ref="humanHeart"/>
+	</bean>
+	<!-- Human human = new Human(); -->
+	<bean id="humanHeart" class="com.app.Heart"></bean>
+	<!-- Heart heart = new Heart(); -->
+	
+	
+		<!-- Through setter Injection -->
+		<!--  Heart humanHeart = new Heart();
+		  Human human = new Human(); 
+		  human.setHeart(humanHeart); -->
+		
+		?
+		<!--   Heart humanHeart = new Heart();
+		  Human human = new Human(humanHeart);  -->
+		 
+
+
+</beans>

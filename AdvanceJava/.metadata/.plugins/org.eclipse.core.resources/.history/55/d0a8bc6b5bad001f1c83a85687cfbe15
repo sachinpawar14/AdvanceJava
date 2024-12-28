@@ -1,0 +1,34 @@
+package com.app;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Road {
+	
+	@Autowired
+	@Qualifier("car")
+	Vehicle vehicle;
+	
+	public Road()
+	{}
+
+	
+	public void setVehicle(Vehicle vehicle) {
+		this.vehicle = vehicle;
+	}
+
+	@Override
+	public String toString() {
+		return "Road [vehicle=" + vehicle + "]";
+	}
+	
+	public void callStart()
+	{
+		System.out.println(vehicle.start());
+	}
+	
+	
+
+}

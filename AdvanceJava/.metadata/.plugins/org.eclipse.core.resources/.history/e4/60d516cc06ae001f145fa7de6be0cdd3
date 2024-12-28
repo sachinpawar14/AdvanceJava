@@ -1,0 +1,7 @@
+package com.app;
+
+import com.app.utility.Coach;
+
+public class TennisCoach implements Coach{
+
+}

@@ -1,0 +1,17 @@
+package com.app;
+
+public class Airtel implements Sim{
+	
+	@Override
+	public void calling() {
+		System.out.println("Calling Using Voda SIM");
+		
+	}
+
+	@Override
+	public void data() {
+		System.out.println("Browsing Data using Voda SIM");
+		
+	}
+
+}

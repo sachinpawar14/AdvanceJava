@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Form</title>
+<script type="text/javascript">
+
+	function func1()
+	{
+		var servNm = document.loginForm.reg.value;
+		
+		if(servNm == null)
+			{
+			alert("Invalid!!");
+			return false;
+			}
+		else
+			{
+			alert("Servlet Name = "+servNm);
+			document.location.href = "register.html";
+			return false;
+			}
+	}
+</script>
+
+
+</head>
+<body>
+<h1 style="font: italic;"> Login Form</h1>
+<hr>
+<form action="loginServlet" method="post" name="loginForm">
+<table border="1">
+<tr>
+<td>Enter FirstName: </td>
+<td><input type="text" name="txtUsername"></td>
+</tr>
+<tr>
+<td>Enter LastName: </td>
+<td><input type="password" name="txtPassword"></td>
+</tr>
+<tr>
+<td><input type="button" onclick="return func1()" value="REGISTER" name="reg"></td>
+<td><input type="submit" value="LOGIN"></td>
+</tr>
+</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+package com.app.entity;
+
+import com.app.utility.FortuneService;
+
+public class BasicFortuneService implements FortuneService{
+
+	@Override
+	public String getFortuneService() {
+		// TODO Auto-generated method stub
+		return "Unlucky!!!";
+	}
+	
+	
+
+}
